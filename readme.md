@@ -1,4 +1,4 @@
-<p align="center"><img src="http://efaastr.egov.mv/training/govmv%20efaas%20logo2.png" width="200"></p>
+<p align="center"><img src="http://efaastr.egov.mv/training/govmvefaaslogo2.png" width="200"></p>
 
 ## About Efaas
 
