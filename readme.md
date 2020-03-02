@@ -38,3 +38,7 @@ setup .env file according to your environment
 php artisan migrate
 
 done!
+
+## Test Fake User
+user name: A000333
+password: @123456
