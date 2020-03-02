@@ -8,7 +8,24 @@ Free and secure online identity management solution by the government for the ci
 
 eFaas is designed to prevent identity fraud and protect user privacy, making sure the right people are given access to the services.
 
--   [Efaas Training](http://efaastr.egov.mv/training).
+## Files to lookup
+- Include Composer.json ("jumbojett/openid-connect-php": "^0.8.0")
+- App/http/middleware/ CustomAuthMiddleware.php
+- App/http/Controllers/Auth/LoginController.php
+- Disable CsrfToken for callback (Please DO NOT COPY AND PAST THIS CODE)
+
+```
+namespace App\Http\Middleware;
+use illuminate\Foundation\Http\Middleware\VerifyCsrToken as Middleware;
+
+Class VerifyCsrfToken extends Middleware
+{
+    protected $except = [
+        'oauth/efaas/callback'
+    ];
+}
+```
+
 
 ## Setup
 
