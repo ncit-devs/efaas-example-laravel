@@ -21,7 +21,7 @@ use illuminate\Foundation\Http\Middleware\VerifyCsrToken as Middleware;
 Class VerifyCsrfToken extends Middleware
 {
     protected $except = [
-        'oauth/efaas/callback'
+        'oauth/efaas/callback'  <------ add 
     ];
 }
 ```
